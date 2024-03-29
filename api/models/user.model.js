@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
@@ -14,7 +15,7 @@ const userSchema = new mongoose.Schema({
     required: true,
   },
 }, { timestamps: true });
- // hash the password before saving to database  
+//  // hash the password before saving to database  
 // userSchema.pre('save', function(next){
 //   if(!this.isModified('password')){
 //     return next();
